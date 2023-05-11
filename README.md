@@ -81,7 +81,8 @@ doublyLinkedList.printReversed();
 
  
  
-**Feel free to explore the code for each data structure implementation, adapt them to your specific needs, and integrate them into your projects. These implementations serve as educational examples and can serve as a solid foundation for understanding and utilizing data structures in C++.**
+ 
+_Feel free to explore the code for each data structure implementation, adapt them to your specific needs, and integrate them into your projects._
 
 ### Contribution
 _Contributions to this repository are welcome! If you have any improvements, bug fixes, or additional data structure implementations, please feel free to submit a pull request._
