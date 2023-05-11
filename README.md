@@ -5,6 +5,8 @@ _Welcome to the Data Structures Implementation repository! This repository conta
 ## Table of Contents
 - Stack (Array-based)
 - Queue (Array-based)
+  - Simple Queue
+  - Circular Queue
 - Linked List
 - Doubly Linked List
 
@@ -26,13 +28,13 @@ int stackSize = stack.size(); // Returns 2
 </pre>
 
   
-  
-## Queue (Array-based)
-_The queue implementation is based on an array and provides functionalities like enqueue, dequeue, front, isEmpty, and size. You can utilize this queue implementation for managing data in a First-In-First-Out (FIFO) order._
-  
+## Simple Queue (Array-based)
+_The simple queue implementation is based on an array and provides functionalities like enqueue, dequeue, front, isEmpty, and size. You can utilize this simple queue implementation for managing data in a First-In-First-Out (FIFO) order._
+
+
 <pre>
 <code>
-// Example usage of Queue (Array-based)
+// Example usage of Simple Queue (Array-based)
 Queue&lt;int&gt; queue;
 queue.enqueue(10);
 queue.enqueue(20);
@@ -44,7 +46,24 @@ int queueSize = queue.size(); // Returns 2
 </code>
 </pre>
 
-  
+
+## Circular Queue (Array-based)
+The circular queue implementation is based on an array and provides functionalities like enqueue, dequeue, front, isEmpty, and size. You can utilize this circular queue implementation for managing data in a circular manner, where the last element points to the first element.
+
+<pre>
+<code>
+// Example usage of Circular Queue (Array-based)
+CircularQueue<int> circularQueue;
+circularQueue.enqueue(10);
+circularQueue.enqueue(20);
+circularQueue.enqueue(30);
+int frontElement = circularQueue.front(); // Returns 10
+circularQueue.dequeue();
+bool isEmpty = circularQueue.isEmpty(); // Returns false
+int queueSize = circularQueue.size(); // Returns 2
+</code>
+</pre>
+
   
 ## Linked List
 _The linked list implementation offers a singly linked list and supports operations such as insertFront, insertEnd, deleteFront, deleteEnd, search, isEmpty, and size. This implementation provides flexibility for dynamic data storage._
